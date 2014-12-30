@@ -38,7 +38,7 @@
 				<reprompt/>
 			</nomatch>
 			<filled>
-				<if cond="response == 0">
+				<if cond="response == '0'">
 					<goto next="#get_response"/>
 				</if>
 				<else/>
