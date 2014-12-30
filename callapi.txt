@@ -5,7 +5,7 @@
 	<property name="inputmodes" value="dtmf" />
 	<form id="get_response">
 		<block>
-			<prosody rate="-10%" pitch="high">
+			<prosody rate="-10%">
 			Hi <value expr="name"/>, 
 			This is to inform you that an incident has happened around Orchard area, all employess are advised to avoid travelling to the affected zone.
 			</prosody>
@@ -15,7 +15,7 @@
 				[dtmf-1 dtmf-2 dtmf-3]
 			</grammar>
 			<prompt>
-				<prosody rate="-10%" pitch="high">
+				<prosody rate="-10%">
 					To acknowledge, press 1.
 					If you are out of town, press 2.
 					If you require assistance, press 3.
@@ -23,7 +23,7 @@
 			</prompt>
 			<noinput>
 				<prompt>
-					<prosody rate="-10%" pitch="high">
+					<prosody rate="-10%">
 						You have not entered any response, please try again.
 					</prosody>
 				</prompt>
@@ -31,14 +31,14 @@
 			</noinput>
 			<nomatch>
 				<prompt>
-					<prosody rate="-10%" pitch="high">
+					<prosody rate="-10%">
 						You have entered invalid response, please try again.
 					</prosody>
 				</prompt>
 				<reprompt />
 			</nomatch>
 			<filled>
-				<prosody rate="-10%" pitch="high">
+				<prosody rate="-10%">
 					You have entered, <value expr="response"/>, your response has been processed, thank you.
 				</prosody>
 			</filled>
