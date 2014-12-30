@@ -4,10 +4,12 @@
 	<var name="username" expr="'hendras'"/>
 	<property name="inputmodes" value="dtmf"/>
 	<form id="get_response">
-		<prosody rate="-10%">
-		Hi <value expr="name"/>, this is an automated call from NCS.
-		This is to inform you that an incident has happened around Orchard area, all employess are advised to avoid travelling to the affected zone.
-		</prosody>
+		<prompt>
+			<prosody rate="-10%">
+				Hi <value expr="name"/>, this is an automated call from NCS.
+				This is to inform you that an incident has happened around Orchard area, all employess are advised to avoid travelling to the affected zone.
+			</prosody>
+		</prompt>
 		<field name="response">
 			<grammar type="text/gsl">
 				[dtmf-0 dtmf-1 dtmf-2 dtmf-3]
