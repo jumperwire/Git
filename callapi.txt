@@ -4,20 +4,15 @@
 	<var name="username" expr="'hendras'"/>
 	<property name="inputmodes" value="dtmf" />
 	<form id="get_response">
+		<block>
+			Hi <value expr="name"/>, 
+			This is to inform you that an incident has happened around Orchard area, all employess are advised to avoid travelling to the affected zone.
+		</block>
 		<field name="response">
 			<grammar type="text/gsl">
 				[dtmf-1 dtmf-2 dtmf-3]
 			</grammar>
 			<prompt>
-				<prosody rate="slow">
-					Hi <value expr="name"/>, 
-					This is to inform you that an incident has happened around Orchard area, all employess are advised to avoid travelling to the affected zone.
-					To acknowledge, press 1.
-					If you are out of town, press 2.
-					If you require assistance, press 3.
-				</prosody>
-			</prompt>
-			<prompt count="2">
 				<prosody rate="slow">
 					To acknowledge, press 1.
 					If you are out of town, press 2.
@@ -41,9 +36,7 @@
 				<reprompt />
 			</nomatch>
 			<filled>
-				<block>
-					You have entered <value expr="response"/>, your response has been processed, thank you.
-				</block>
+				You have entered <value expr="response"/>, your response has been processed, thank you.
 			</filled>
 		</field>
 	</form>
