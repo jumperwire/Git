@@ -1,4 +1,4 @@
-<vxml version = "2.1" >
+<vxml version="2.1">
 	<form>
 		<block>
 			<prompt xml:lang="en-gb-male">
