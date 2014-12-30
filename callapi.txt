@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <vxml version="2.1">
-	<var name="name" expr="'Belinda'"/>
 	<var name="username" expr="'hendras'"/>
 	<property name="inputmodes" value="dtmf"/>
 	<form id="get_response">
 		<block>
-			<prosody rate="-10%">
-				Hi, this is an automated call from NCS.
-				This is to inform you that an incident has happened around Orchard area, all employees are advised to avoid travelling to the affected zone.
-			</prosody>
+			<prompt xml:lang="en-gb-male">
+				<prosody rate="-10%">
+					Hi, this is an automated call from NCS.
+					This is to inform you that an incident has happened around Orchard area, all employees are advised to avoid travelling to the affected zone.
+				</prosody>
+			</prompt>
 		</block>
 		<field name="response">
 			<grammar type="text/gsl">
 				[dtmf-0 dtmf-1 dtmf-2 dtmf-3]
 			</grammar>
-			<prompt>
+			<prompt xml:lang="en-gb-male">
 				<prosody rate="-10%">
 					To acknowledge, press 1.
 					If you are out of town, press 2.
@@ -39,13 +40,13 @@
 				<reprompt/>
 			</nomatch>
 			<filled>
+				You have entered, <value expr="response"/>.
 				<if cond="response == '0'">
-					You have entered, <value expr="response"/>.
 					<goto next="#get_response"/>
 				</if>
 				<else/>
 				<prosody rate="-10%">
-					You have entered, <value expr="response"/>, your response has been processed, thank you.
+					<submit next="https://raw.githubusercontent.com/jumperwire/Git/a26a36944b62b8e13dd185cb2b2d18d01778634b/submit.txt" method="post" namelist="username response"/>
 				</prosody>
 			</filled>
 		</field>
