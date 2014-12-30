@@ -1,8 +1,10 @@
 <vxml version = "2.1" >
 	<form>
 		<block>
-			<prompt>
-				Your response has been processed, thank you.
+			<prompt xml:lang="en-gb-male">
+				<prosody rate="-10%">
+					Your response has been processed, thank you.
+				</prosody>
 			</prompt>
 		</block>
 	</form>
