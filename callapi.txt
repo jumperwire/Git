@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<vxml version = "2.1">
+<vxml version="2.1">
 	<var name="name" expr="'Hendra Sutanto'"/>
 	<var name="username" expr="'hendras'"/>
 	<property name="inputmodes" value="dtmf" />
@@ -9,8 +9,10 @@
 				[dtmf-1 dtmf-2 dtmf-3]
 			</grammar>
 			<block>
-				Hi <value expr="name"/>, 
-				This is to inform you that an incident has happened around Orchard area, all employess are advised to avoid travelling to the affected zone.
+				<prosody rate="slow">
+					Hi <value expr="name"/>, 
+					This is to inform you that an incident has happened around Orchard area, all employess are advised to avoid travelling to the affected zone.
+				</prosody>
 			</block>
 			<prompt>
 				<prosody rate="slow">
@@ -23,14 +25,14 @@
 				<prompt>
 					<prosody rate="slow">
 						You have not entered any response, please try again.
-					<prosody rate="slow">
+					</prosody>
 				</prompt>
 			</noinput>
 			<nomatch>
 				<prompt>
 					<prosody rate="slow">
 						You have entered invalid response, please try again.
-					<prosody rate="slow">
+					</prosody>
 				</prompt>
 			</nomatch>
 			<filled>
