@@ -17,6 +17,7 @@
 					To acknowledge, press 1.
 					If you are out of town, press 2.
 					If you require assistance, press 3.
+					To repeat, press 0.
 				</prosody>
 			</prompt>
 			<noinput>
