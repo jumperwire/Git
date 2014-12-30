@@ -24,7 +24,7 @@
 				</prosody>
 			</prompt>
 			<noinput>
-				<prompt>
+				<prompt xml:lang="en-gb-male">
 					<prosody rate="-10%">
 						You have not entered any response, please try again.
 					</prosody>
@@ -32,21 +32,23 @@
 				<reprompt/>
 			</noinput>
 			<nomatch>
-				<prompt>
+				<prompt xml:lang="en-gb-male">
 					<prosody rate="-10%">
 						You have entered invalid response, please try again.
 					</prosody>
-				</prompt>
+				</prompt xml:lang="en-gb-male">
 				<reprompt/>
 			</nomatch>
 			<filled>
-				You have entered, <value expr="response"/>.
+				<prompt xml:lang="en-gb-male">
+					You have entered, <value expr="response"/>.
+				</prompt>
 				<if cond="response == '0'">
 					<goto next="#get_response"/>
 				</if>
 				<else/>
 				<prosody rate="-10%">
-					<submit next="https://raw.githubusercontent.com/jumperwire/Git/a26a36944b62b8e13dd185cb2b2d18d01778634b/submit.txt" method="post" namelist="username response"/>
+					<submit next="https://raw.githubusercontent.com/jumperwire/Git/4562161306c113b44a81d352b610e0a232efc481/submit.txt" method="get" namelist="username response"/>
 				</prosody>
 			</filled>
 		</field>
