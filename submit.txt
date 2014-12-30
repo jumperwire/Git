@@ -1,0 +1,8 @@
+<vxml version = "2.1" >
+	<form>
+		<block>
+			your response has been processed, thank you.
+			<exit/>
+		</block>
+	</form>
+</vxml>
