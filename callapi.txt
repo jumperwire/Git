@@ -5,15 +5,15 @@
 	<property name="inputmodes" value="dtmf" />
 	<form id="get_response">
 		<field name="response">
-			<grammar type="text/gsl">
-				[dtmf-1 dtmf-2 dtmf-3]
-			</grammar>
 			<block>
 				<prosody rate="slow">
 					Hi <value expr="name"/>, 
 					This is to inform you that an incident has happened around Orchard area, all employess are advised to avoid travelling to the affected zone.
 				</prosody>
 			</block>
+			<grammar type="text/gsl">
+				[dtmf-1 dtmf-2 dtmf-3]
+			</grammar>
 			<prompt>
 				<prosody rate="slow">
 					To acknowledge, press 1.
@@ -27,6 +27,7 @@
 						You have not entered any response, please try again.
 					</prosody>
 				</prompt>
+				<reprompt />
 			</noinput>
 			<nomatch>
 				<prompt>
@@ -34,6 +35,7 @@
 						You have entered invalid response, please try again.
 					</prosody>
 				</prompt>
+				<reprompt />
 			</nomatch>
 			<filled>
 				<block>
