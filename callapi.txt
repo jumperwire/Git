@@ -36,20 +36,20 @@
 					<prosody rate="-10%">
 						You have entered invalid response, please try again.
 					</prosody>
-				</prompt xml:lang="en-gb-male">
+				</prompt>
 				<reprompt/>
 			</nomatch>
 			<filled>
 				<prompt xml:lang="en-gb-male">
-					You have entered, <value expr="response"/>.
+					<prosody rate="-10%">
+						You have entered, <value expr="response"/>.
+					</prosody>
 				</prompt>
 				<if cond="response == '0'">
 					<goto next="#get_response"/>
 				</if>
 				<else/>
-				<prosody rate="-10%">
-					<submit next="https://raw.githubusercontent.com/jumperwire/Git/4562161306c113b44a81d352b610e0a232efc481/submit.txt" method="get" namelist="username response"/>
-				</prosody>
+				<submit next="https://raw.githubusercontent.com/jumperwire/Git/4562161306c113b44a81d352b610e0a232efc481/submit.txt" method="get" namelist="username response"/>
 			</filled>
 		</field>
 	</form>
