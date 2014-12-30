@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <vxml version="2.1">
-	<var name="name" expr="'Belinda Chua'"/>
+	<var name="name" expr="'Belinda'"/>
 	<var name="username" expr="'hendras'"/>
 	<property name="inputmodes" value="dtmf"/>
 	<form id="get_response">
 		<block>
 			<prosody rate="-10%">
-				Hi <value expr="name"/>, this is an automated call from NCS.
-				This is to inform you that an incident has happened around Orchard area, all employess are advised to avoid travelling to the affected zone.
+				Hi, this is an automated call from NCS.
+				This is to inform you that an incident has happened around Orchard area, all employees are advised to avoid travelling to the affected zone.
 			</prosody>
 		</block>
 		<field name="response">
