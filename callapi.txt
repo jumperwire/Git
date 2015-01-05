@@ -49,7 +49,7 @@
 					<goto next="#get_response"/>
 				</if>
 				<else/>
-				<submit next="https://raw.githubusercontent.com/jumperwire/Git/50ca4fa33507c1d6765faf05998586f92f4ce601/submit.txt" method="get" namelist="username response"/>
+				<submit next="https://raw.githubusercontent.com/jumperwire/Git/master/submit.txt" method="get" namelist="username response"/>
 			</filled>
 		</field>
 	</form>
