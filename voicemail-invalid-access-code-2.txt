@@ -3,9 +3,10 @@
 		<block>
 			<prompt xml:lang="en-gb-male">
 				<prosody rate="-10%">
-					Your response has been recorded, thank you.
+					You have entered an invalid access code.
 				</prosody>
 			</prompt>
+			<goto next="#get_response"/>
 		</block>
 	</form>
 </vxml>
