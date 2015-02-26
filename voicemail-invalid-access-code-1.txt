@@ -9,7 +9,7 @@
 				</prosody>
 			</prompt>
 		</block>
-		<field name="response" type="digits?minlength=1;maxlength=10">
+		<field name="response">
 			<grammar version="1.0" xml:lang="en-US" root="keypress" mode="dtmf" scope="document">
 				<rule id="keypress" scope="public">
 					<one-of>
