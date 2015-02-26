@@ -10,8 +10,13 @@
 			</prompt>
 		</block>
 		<field name="response">
-			<grammar type="text/gsl">
-				[dtmf-0 dtmf-1 dtmf-2 dtmf-3]
+			<grammar mode="dtmf" version="1.0" root="root">
+				<rule id="root" scope="public">
+					<one-of>
+						<item> 1 2 3 </item>
+						<item> # </item>
+					</one-of>
+				</rule>
 			</grammar>
 			<prompt xml:lang="en-gb-male">
 				<prosody rate="-10%">
