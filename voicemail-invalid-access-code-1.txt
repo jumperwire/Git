@@ -13,14 +13,23 @@
 			<grammar mode="dtmf" version="1.0" root="root">
 				<rule id="root" scope="public">
 					<one-of>
-						<item> 1 2 3 4 5 6 7 8 9 0 </item>
+						<item> 1 </item>
+						<item> 2 </item>
+						<item> 3 </item>
+						<item> 4 </item>
+						<item> 5 </item>
+						<item> 6 </item>
+						<item> 7 </item>
+						<item> 8 </item>
+						<item> 9 </item>
+						<item> 0 </item>
 						<item> # </item>
 					</one-of>
 				</rule>
 			</grammar>
 			<prompt xml:lang="en-gb-male">
 				<prosody rate="-10%">
-					To listen to the broadcast message, please enter the access code.
+					To listen to the broadcast message, please enter the access code followed by the # sign.
 				</prosody>
 			</prompt>
 			<noinput>
