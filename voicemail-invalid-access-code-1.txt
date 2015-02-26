@@ -11,7 +11,7 @@
 		</block>
 		<field name="response" type="digits?minlength=1;maxlength=10">
 			<grammar version="1.0" xml:lang="en-US" root="keypress" mode="dtmf" scope="document">
-				<rule id="keypress" scope = "public">
+				<rule id="keypress" scope="public">
 					<one-of>
 						<item> 1 </item>
 						<item> 2 </item>
