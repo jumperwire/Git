@@ -31,7 +31,7 @@
 			</grammar>
 			<prompt xml:lang="en-gb-male">
 				<prosody rate="-10%">
-					There are 12 broadcast available. To listen to the broadcast message, please enter the broadcast number followed by the # sign.
+					There are 12 broadcast available. To listen to the broadcast message, please enter the broadcast number.
 				</prosody>
 			</prompt>
 			<noinput>
@@ -53,7 +53,7 @@
 			<filled>
 				<prompt xml:lang="en-gb-male">
 					<prosody rate="-10%">
-						You have entered, <value expr="response"/>,
+						You have entered, <value expr="response"/>,,
 					</prosody>
 				</prompt>
 				<submit next="https://raw.githubusercontent.com/jumperwire/Git/master/voicemail-valid-access-code-2.txt" method="get" namelist="response"/>
