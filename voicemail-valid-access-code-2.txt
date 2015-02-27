@@ -6,7 +6,7 @@
 			<prompt xml:lang="en-gb-male">
 				<prosody rate="-10%">
 					Chemical spills has been cleaned up. You may return to your workplace or home. Stay away from the lake and do not eat any fish from lake until further notice.
-					End of broadcast message.
+					,,End of broadcast message.
 				</prosody>
 			</prompt>
 		</block>
@@ -23,10 +23,9 @@
 						<item> 7 </item>
 						<item> 8 </item>
 						<item> 9 </item>
-						<item> 1 0 </item>
-						<item> 1 1 </item>
-						<item> 1 2 </item>
-						<item> # </item>
+						<item> 10 </item>
+						<item> 11 </item>
+						<item> 12 </item>
 					</one-of>
 				</rule>
 			</grammar>
@@ -54,13 +53,9 @@
 			<filled>
 				<prompt xml:lang="en-gb-male">
 					<prosody rate="-10%">
-						You have entered, <value expr="response"/>.
+						You have entered, <value expr="response"/>,
 					</prosody>
 				</prompt>
-				<if cond="response == '0'">
-					<goto next="#get_response"/>
-				</if>
-				<else/>
 				<submit next="https://raw.githubusercontent.com/jumperwire/Git/master/voicemail-valid-access-code-2.txt" method="get" namelist="response"/>
 			</filled>
 		</field>
