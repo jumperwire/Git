@@ -5,7 +5,8 @@
 		<block>
 			<prompt xml:lang="en-gb-male">
 				<prosody rate="-10%">
-					,,,,You have entered an invalid access code.
+					<break time="1s"/>
+					You have entered an invalid access code.
 				</prosody>
 			</prompt>
 		</block>
@@ -51,7 +52,7 @@
 			<filled>
 				<prompt xml:lang="en-gb-male">
 					<prosody rate="-10%">
-						You have entered, <prosody rate="-50%"><say-as interpret-as="vxml:digits"><value expr="response"/></say-as></prosody>,,
+						You have entered, <prosody rate="-50%"><say-as interpret-as="vxml:digits"><value expr="response"/></say-as></prosody>
 					</prosody>
 				</prompt>
 				<if cond="response == '0'">

@@ -5,8 +5,10 @@
 		<block>
 			<prompt xml:lang="en-gb-male">
 				<prosody rate="-10%">
-					,,,,Chemical spills has been cleaned up. You may return to your workplace or home. Stay away from the lake and do not eat any fish from lake until further notice.
-					,,,,End of broadcast message.
+					<break time="1s"/>
+					Chemical spills has been cleaned up. You may return to your workplace or home. Stay away from the lake and do not eat any fish from lake until further notice.
+					<break time="1s"/>
+					End of broadcast message.
 				</prosody>
 			</prompt>
 		</block>
@@ -53,7 +55,7 @@
 			<filled>
 				<prompt xml:lang="en-gb-male">
 					<prosody rate="-10%">
-						You have entered, <value expr="response"/>,,
+						You have entered, <value expr="response"/>
 					</prosody>
 				</prompt>
 				<submit next="https://raw.githubusercontent.com/jumperwire/Git/master/voicemail-valid-access-code-2.txt" method="get" namelist="response"/>
