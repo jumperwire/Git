@@ -14,7 +14,6 @@
 			<grammar mode="dtmf" version="1.0" root="root">
 				<rule id="root" scope="public">
 					<one-of>
-						<item> 0 </item>
 						<item> 1 </item>
 						<item> 2 </item>
 						<item> 3 </item>
@@ -24,9 +23,9 @@
 						<item> 7 </item>
 						<item> 8 </item>
 						<item> 9 </item>
-						<item> 10 </item>
-						<item> 11 </item>
-						<item> 12 </item>
+						<item> 1 0 </item>
+						<item> 1 1 </item>
+						<item> 1 2 </item>
 						<item> # </item>
 					</one-of>
 				</rule>
@@ -55,7 +54,7 @@
 			<filled>
 				<prompt xml:lang="en-gb-male">
 					<prosody rate="-10%">
-						You have entered, <prosody rate="-50%"><say-as interpret-as="vxml:digits"><value expr="response"/></say-as></prosody>.
+						You have entered, <value expr="response"/>.
 					</prosody>
 				</prompt>
 				<if cond="response == '0'">
