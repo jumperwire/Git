@@ -5,12 +5,12 @@
 		<block>
 			<prompt xml:lang="en-gb-male">
 				<prosody rate="-10%">
-					Chemical spills has been cleaned up. You may return to your workplace or home. Stay away from the lake and do not eat any fish from lake until further notice.
-					,,End of broadcast message.
+					,,,,Chemical spills has been cleaned up. You may return to your workplace or home. Stay away from the lake and do not eat any fish from lake until further notice.
+					,,,,End of broadcast message.
 				</prosody>
 			</prompt>
 		</block>
-		<field name="response">
+		<field name="response" type="digits">
 			<grammar mode="dtmf" version="1.0" root="root">
 				<rule id="root" scope="public">
 					<one-of>

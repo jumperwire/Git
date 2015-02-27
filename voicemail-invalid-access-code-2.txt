@@ -5,7 +5,7 @@
 		<block>
 			<prompt xml:lang="en-gb-male">
 				<prosody rate="-10%">
-					You have entered an invalid access code.
+					,,,,You have entered an invalid access code.
 				</prosody>
 			</prompt>
 		</block>

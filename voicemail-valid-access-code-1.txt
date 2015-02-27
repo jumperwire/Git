@@ -5,11 +5,11 @@
 		<block>
 			<prompt xml:lang="en-gb-male">
 				<prosody rate="-10%">
-					You are currently accessing broadcast message for, flood incident plan.
+					,,,,You are currently accessing broadcast message for, flood incident plan.
 				</prosody>
 			</prompt>
 		</block>
-		<field name="response">
+		<field name="response" type="digits">
 			<grammar mode="dtmf" version="1.0" root="root">
 				<rule id="root" scope="public">
 					<one-of>
