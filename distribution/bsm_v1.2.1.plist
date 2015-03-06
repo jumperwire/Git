@@ -11,7 +11,7 @@
 					<key>kind</key>
 					<string>software-package</string>
 					<key>url</key>
-					<string>/*Link for ipa file*/</string>
+					<string>https://github.com/jumperwire/Git/raw/master/distribution/BSMv1.2.1.ipa</string>
 				</dict>
 				<dict>
 					<key>kind</key>
@@ -19,7 +19,7 @@
 					<key>needs-shine</key>
 					<true/>
 					<key>url</key>
-					<string>/*Link for image nowIcon.png*/</string>
+					<string>https://raw.githubusercontent.com/jumperwire/Git/master/distribution/nowIcon.png</string>
 				</dict>
 				<dict>
 					<key>kind</key>
@@ -27,7 +27,7 @@
 					<key>needs-shine</key>
 					<true/>
 					<key>url</key>
-					<string>/*Link for image nowIcon.png*/</string>
+					<string>https://raw.githubusercontent.com/jumperwire/Git/master/distribution/nowIcon.png</string>
 				</dict>
 			</array>
 			<key>metadata</key>
