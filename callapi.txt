@@ -11,7 +11,7 @@
 				</prosody>
 			</prompt>
 			<prompt xml:lang="zh-cn-male">
-				你 好 吗？
+				你 好 吗？？
 			</prompt>
 		</block>
 		<field name="response">
