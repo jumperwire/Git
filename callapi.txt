@@ -11,7 +11,7 @@
 				</prosody>
 			</prompt>
 			<prompt xml:lang="zh-cn-male">
-				你好吗？？
+				你好吗？？ I love you, こんにちは, 안녕하세요.
 			</prompt>
 		</block>
 		<field name="response">
