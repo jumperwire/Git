@@ -10,8 +10,14 @@
 					This is to inform you that an incident has happened around Orchard area, all employees are advised to avoid travelling to the affected zone.
 				</prosody>
 			</prompt>
-			<prompt xml:lang="zh-cn-male">
-				你好吗？？ I love you, こんにちは, 안녕하세요.
+			<prompt xml:lang="zh-cn-female">
+				你好吗？？ I love you
+			</prompt>
+			<prompt xml:lang="ja-jp-male">
+				こんにちは I love you
+			</prompt>
+			<prompt xml:lang="ko-kr-female">
+				안녕하세요 I love you
 			</prompt>
 		</block>
 		<field name="response">
