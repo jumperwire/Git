@@ -8,7 +8,7 @@
 					<break time="1s"/>
 					Chemical spills has been cleaned up. You may return to your workplace or home. Stay away from the lake and do not eat any fish from lake until further notice.
 					<break time="1s"/>
-					End of broadcast message.
+					This message was broadcasted on 12 Jan 2015.
 				</prosody>
 			</prompt>
 		</block>

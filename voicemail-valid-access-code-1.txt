@@ -31,7 +31,7 @@
 			</grammar>
 			<prompt xml:lang="en-gb-male">
 				<prosody rate="-10%">
-					There are 12 broadcast available. To listen to the broadcast message, please enter the broadcast number.
+					There are 12 broadcast available. To listen to the broadcast message, please enter option from 1 to 12.
 				</prosody>
 			</prompt>
 			<noinput>
